@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Post {
+  id: Int!
+  title: String!
+}
+
+type Query {
+  posts: [Post!]!
+}
+
+type Mutation {
+  createPost(title: String!): Post!
+  removePost(id: Int!): Boolean!
+}
